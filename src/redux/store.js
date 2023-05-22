@@ -4,7 +4,7 @@ import detailsReducer from './currency/detailSlice';
 
 const reducer = combineReducers({
   currency: currencyReducer,
-  detils: detailsReducer,
+  details: detailsReducer,
 });
 
 const store = configureStore({ reducer });
