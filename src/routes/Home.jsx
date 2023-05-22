@@ -4,6 +4,7 @@ import { v4 as uID } from 'uuid';
 import { useNavigate } from 'react-router';
 import { getCurrency } from '../redux/currency/currencySlice';
 import Currency from '../components/currency/Currency';
+import notFound from '../media/not-found.png';
 
 const Home = () => {
   const fetchStatus = useRef(true);
@@ -40,8 +41,9 @@ const Home = () => {
   const result = () => {
     if (filterArray.length === 0) {
       return (
-        <div>
-          Error, Currency Not Found
+        <div className="not-found">
+          <h3 className="not-foundTitle">CryptoCurrency not found.</h3>
+          <img src={notFound} alt="Not Found" className="not-foundImg" />
         </div>
       );
     }
@@ -51,12 +53,14 @@ const Home = () => {
           key={uID()}
           aria-hidden="true"
           onClick={() => checkClick(item)}
+          className="currency-div"
         >
           <Currency
             img={item.icon}
             name={item.name}
             price={item.price}
             priceChange={item.priceChange1w}
+            symbol={item.symbol}
           />
         </div>
       </>
@@ -65,16 +69,17 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      <h1 className="hero-title">CryptoCurrency Tracker (CCT)</h1>
+      <div className="input-container">
         <input
           type="text"
           onChange={(e) => setCurrencyWanted(e.target.value)}
-          placeholder="Search a crypto..."
-          className="search-input"
+          placeholder="Search for a crypto..."
           value={currencyWanted}
         />
       </div>
-      <div className="coins-container flex limit">{result()}</div>
+      <h3 className="currency-title darker-bg">Top 30 Cryptos</h3>
+      <div className="currency-container flex">{result()}</div>
     </>
   );
 };

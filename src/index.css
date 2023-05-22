@@ -1,6 +1,241 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* Normalize */
 * {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: 'Lato', sans-serif;
+}
+
+/* Global Classes */
+.flex {
+  display: flex;
+}
+
+body {
+  background-color: #fb5092;
+}
+
+.darker-bg {
+  background-color: #df4580;
+}
+
+/* ========================= */
+
+/* NavBar */
+nav {
+  margin-bottom: 10%;
+  color: #fff;
+}
+
+.nav-container {
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+/* NavBar Center */
+.nav-text {
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  margin-left: 29%;
+}
+
+.nav-text a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  font-size: 1.1em;
+}
+
+.navbar-logo {
+  width: 10%;
+}
+
+/* Nav Side */
+.nav-side {
+  width: 15%;
+  cursor: pointer;
+}
+
+.nav-side:hover {
+  transform: scale(1.1);
+}
+
+/* END NAVBAR */
+
+/* ============================== */
+
+/* HERO SECTION (Input + Title) */
+.hero-title {
+  text-align: center;
+  color: #fff;
+}
+
+.input-container {
+  text-align: center;
+}
+
+.input-container input {
+  width: 70%;
+  margin: 10%;
+  height: 2.813rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+/* End Hero Section */
+
+/* ================================ */
+
+/* CURRENCY SECTION */
+.currency-title {
+  padding: 2%;
+  color: #fff;
+}
+
+.currency-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.currency-div {
+  margin-bottom: 5%;
+  width: 80%;
+  border-radius: 10%;
+  color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.currency-div:hover {
+  transition: 0.5s ease-in-out;
+  background: transparent;
+  box-shadow: 0 0 1em #8e2c51;
+  border: 2px solid #8e2c51;
+}
+
+.currency-div:nth-child(odd) {
+  background-color: #df4580;
+}
+
+.currency-div:nth-child(even) {
+  background-color: #c43d71;
+}
+
+/* NOT FOUND */
+.not-found {
+  color: #fff;
+  text-align: center;
+}
+
+.not-foundTitle {
+  margin-bottom: 2%;
+}
+
+.not-foundImg {
+  width: 20em;
+  height: 20em;
+  backdrop-filter: blur(120px);
+  background-color: hsla(0, 0%, 100%, 0.123);
+  border-radius: 10px;
+}
+
+/* End Currency Section */
+
+/* ================================ */
+
+/* CURRENCY CARD */
+.go-arrow {
+  text-align: end;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.logo-container {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.currency-logo {
+  width: 5em;
+  height: 5em;
+}
+
+.card-container {
+  flex-direction: column;
+}
+
+.card-column {
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.card-left {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-right {
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.card-text {
+  margin-right: 5px;
+}
+
+/* End Currency Cards */
+
+/* =========================== */
+
+/* DETAILS PAGE */
+.darker-detail {
+  background: #f6699a;
+}
+
+.details-card {
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #f6699a, #cb4277);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2%;
+  width: 90%;
+  margin: 5% auto;
+  text-align: center;
+  color: #fff;
+}
+
+.spec-title {
+  margin-bottom: 5%;
+}
+
+.spec-container {
+  margin-top: 5%;
+}
+
+.details-icon {
+  width: 7em;
+  height: 7em;
+}
+
+.detail-spec {
+  margin: 3%;
+  font-size: 1.1em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.detail-spec a {
+  color: #fff;
+  text-decoration: none;
 }
