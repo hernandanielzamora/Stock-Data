@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// const apiUrl = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false&locale=en';
 const apiUrl = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=30&currency=USD';
 
 export const getCurrency = createAsyncThunk(
