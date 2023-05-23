@@ -79,7 +79,7 @@ const Home = () => {
         />
       </div>
       <h3 className="currency-title darker-bg">Top 30 Cryptos</h3>
-      <div className="currency-container flex">{result()}</div>
+      <div className="currency-container">{result()}</div>
     </>
   );
 };
