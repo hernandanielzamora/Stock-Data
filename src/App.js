@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Home from './routes/Home';
 import CurrencyDetail from './routes/CurrencyDetail';
 import store from './redux/store';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/details/:currencyID" element={<CurrencyDetail />} />
         </Routes>
+        <Footer />
       </Provider>
     </>
   );

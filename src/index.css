@@ -213,6 +213,7 @@ nav {
   margin: 5% auto;
   text-align: center;
   color: #fff;
+  margin-bottom: 33%;
 }
 
 .spec-title {
@@ -238,4 +239,81 @@ nav {
 .detail-spec a {
   color: #fff;
   text-decoration: none;
+}
+
+/* END DETAILS PAGE */
+
+/* =========================================== */
+
+/* FOOTER */
+
+.footer-title {
+  text-align: center;
+  padding: 2%;
+}
+
+/* END FOOTER */
+
+/* =========================================== */
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+  /* NAVBAR */
+  .nav-text a {
+    font-size: 1.5em;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  /* NAVBAR */
+  .nav-text a {
+    font-size: 2em;
+  }
+
+  .nav-side {
+    font-size: 2em;
+  }
+
+  /* HERO SECTION */
+  .hero-title {
+    font-size: 3em;
+  }
+
+  /* CURRENCY SECTION */
+  .currency-title {
+    font-size: 1.5em;
+  }
+
+  .currency-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 5%;
+  }
+
+  /* CARDS */
+  .card-container p {
+    font-size: 1.2em;
+  }
+
+  /* DETAILS */
+  .details-card {
+    width: 60%;
+    font-size: 1.25em;
+  }
+
+  /* Footer */
+  .footer-title {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* NAVBAR */
+  .nav-text a {
+    font-size: 3em;
+  }
 }

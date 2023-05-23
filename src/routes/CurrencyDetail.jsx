@@ -27,7 +27,7 @@ const CurrencyDetail = () => {
         </div>
         <div className="detail-spec">
           <span className="card-text">MarketCap: $</span>
-          {currencyDetails.marketCap.toFixed(2)}
+          {(currencyDetails.marketCap).toFixed(2)}
         </div>
         <div className="detail-spec darker-detail">
           <span className="card-text">Price changes (1H) :</span>
