@@ -192,7 +192,7 @@ Otherwise, you can see the project deployed in Render in the live demo.
 
 ## :movie_camera: Project Presentation <a name="project-presentation"></a>
 
-- [Presentation](https://www.loom.com/share/9c8bcdbd068e48268b4506075469c20a)
+- [Presentation](https://www.loom.com/share/f56b7be2522e4487bb2be65e37cfe7ee)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
