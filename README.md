@@ -110,13 +110,59 @@ In order to run this project you need:
 - React
 - Jest
 
-### Usage
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Install
+
+Amongisde the prerequisites, you will need to install the following dependencies: 
+- react-redux
+- redux toolkit
+- jest
+- babel
+- prop-types
+- react-dom
+- react-icons
+- react-router and react-router-dom
+- uuid
+
+All of these dependencies can be installed with [npm](https://www.npmjs.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Usage <a name="usage"></a>
 
 To run the project, execute the following command in your terminal (inside the project folder):
 
 - npm init
 - npm install
 - npm start
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Run Tests <a name="run-tests"></a>
+
+To run the the tests, you will have to run the following command in the console (inside the project folder): 
+
+- npm install
+
+And then you will have to run the following command in the console (inside the project folder): 
+
+- npm test
+
+You will see the outcome in the console
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Deployment <a name="deployment"></a>
+
+To deploy this project in a local enviroment, you will have to run:
+
+- npm start
+
+Then, you will see the project run in a local host: 3000.
+Otherwise, you can see the project deployed in Render down below.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
