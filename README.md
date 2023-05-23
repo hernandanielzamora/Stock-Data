@@ -162,7 +162,7 @@ To deploy this project in a local enviroment, you will have to run:
 - npm start
 
 Then, you will see the project run in a local host: 3000.
-Otherwise, you can see the project deployed in Render down below.
+Otherwise, you can see the project deployed in Render in the live demo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
