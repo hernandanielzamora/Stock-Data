@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const apiUrl = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=30&currency=USD';
 
@@ -7,8 +6,9 @@ export const getCurrency = createAsyncThunk(
   'getData',
   async () => {
     try {
-      const res = axios.get(apiUrl);
-      return res;
+      const res = await fetch(apiUrl);
+      const data = await res.json();
+      return data;
     } catch (error) {
       return error;
     }
@@ -30,7 +30,7 @@ const currencySlice = createSlice({
     }));
 
     builder.addCase(getCurrency.fulfilled, (state, action) => ({
-      ...state, isLoading: false, currencyArr: action.payload.data.coins,
+      ...state, isLoading: false, currencyArr: action.payload.coins,
     }));
   },
 });

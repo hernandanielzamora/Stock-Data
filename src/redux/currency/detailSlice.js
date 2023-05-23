@@ -1,15 +1,14 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
-// const apiUrl = 'https://api.coingecko.com/api/v3/coins/';
 const apiUrl = 'https://api.coinstats.app/public/v1/coins/';
 
 export const getDetails = createAsyncThunk(
   'getDetails',
   async (id) => {
     try {
-      const res = await axios.get(`${apiUrl}${id}`);
-      return res;
+      const res = await fetch(`${apiUrl}${id}`);
+      const data = await res.json();
+      return data;
     } catch (error) {
       return error;
     }
@@ -33,7 +32,7 @@ const detailsSlice = createSlice({
     builder.addCase(getDetails.fulfilled, (state, action) => ({
       ...state,
       isLoading: false,
-      currencyDetails: action.payload.data.coin,
+      currencyDetails: action.payload.coin,
     }));
   },
 });
