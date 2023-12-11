@@ -78,7 +78,7 @@ const Home = () => {
           value={currencyWanted}
         />
       </div>
-      <h3 className="currency-title darker-bg">Top 30 Cryptos</h3>
+      <h3 className="currency-title darker-bg">Top Cryptos</h3>
       <div className="currency-container">{result()}</div>
     </>
   );

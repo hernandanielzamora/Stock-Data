@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const apiUrl = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=30&currency=USD';
+const apiUrl = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=150&currency=USD';
 
 export const getCurrency = createAsyncThunk(
   'getData',

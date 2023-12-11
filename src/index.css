@@ -15,11 +15,11 @@
 }
 
 body {
-  background-color: #fb5092;
+  background-color: #3e3a3c;
 }
 
 .darker-bg {
-  background-color: #df4580;
+  background-color: #3f3e3f;
 }
 
 /* ========================= */
@@ -118,18 +118,18 @@ nav {
 }
 
 .currency-div:hover {
-  transition: 0.5s ease-in-out;
-  background: transparent;
+  transition: 0.2s ease-in-out;
+  scale: 1.1;
   box-shadow: 0 0 1em #8e2c51;
   border: 2px solid #8e2c51;
 }
 
 .currency-div:nth-child(odd) {
-  background-color: #df4580;
+  background-color: #323031;
 }
 
 .currency-div:nth-child(even) {
-  background-color: #c43d71;
+  background-color: #562b3c;
 }
 
 /* NOT FOUND */
