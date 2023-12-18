@@ -22,7 +22,7 @@ const NavBar = () => {
           <div className="flex nav-text">
             <Link to="/">
               <img src={logo} alt="Crypto Currency Logo" className="navbar-logo" />
-              CCT
+              Crypto Currency Tracker
             </Link>
           </div>
           <div className="nav-side">

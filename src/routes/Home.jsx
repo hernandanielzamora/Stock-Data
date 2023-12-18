@@ -42,7 +42,7 @@ const Home = () => {
     if (filterArray.length === 0) {
       return (
         <div className="not-found">
-          <h3 className="not-foundTitle">CryptoCurrency not found.</h3>
+          <h3 className="not-foundTitle">Currency not found.</h3>
           <img src={notFound} alt="Not Found" className="not-foundImg" />
         </div>
       );
@@ -69,14 +69,18 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="hero-title">CryptoCurrency Tracker (CCT)</h1>
+      <h1 className="hero-title">CryptoCurrency Tracker</h1>
       <div className="input-container">
-        <input
-          type="text"
-          onChange={(e) => setCurrencyWanted(e.target.value)}
-          placeholder="Search for a crypto..."
-          value={currencyWanted}
-        />
+        <label className="custom-field" htmlFor="input-search">
+          <input
+            type="text"
+            onChange={(e) => setCurrencyWanted(e.target.value)}
+            required
+            id="input-search"
+            value={currencyWanted}
+          />
+          <span className="placeholder">Search Currency</span>
+        </label>
       </div>
       <h3 className="currency-title darker-bg">Top Cryptos</h3>
       <div className="currency-container">{result()}</div>
