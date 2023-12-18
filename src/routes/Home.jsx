@@ -70,7 +70,7 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="hero-title">CryptoCurrency Tracker</h1>
+      <h1 className="hero-title">Crypto Currency Tracker</h1>
       <div className="input-container">
         <label className="custom-field" htmlFor="input-search">
           <input

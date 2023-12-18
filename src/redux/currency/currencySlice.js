@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apiUrl = 'https://openapiv1.coinstats.app/coins?limit=300&currency=USD';
+const apiUrl = 'https://openapiv1.coinstats.app/coins?limit=150&currency=USD';
 
 export const getCurrency = createAsyncThunk(
   'getData',
