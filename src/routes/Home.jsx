@@ -12,7 +12,7 @@ const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [currencyWanted, setCurrencyWanted] = useState('');
-
+  console.log(currencyArr[0]);
   useEffect(() => {
     if (fetchStatus.current) {
       fetchStatus.current = false;
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       );
     }
-    return filterArray.map((item) => (
+    return currencyArr.map((item) => (
       <>
         <div
           key={uID()}
@@ -56,10 +56,10 @@ const Home = () => {
           className="currency-div"
         >
           <Currency
-            img={item.icon}
+            key={item.id}
             name={item.name}
-            price={item.price}
-            priceChange={item.priceChange1w}
+            priceUsd={item.priceUsd}
+            priceChange={item.changePercent24Hr}
             symbol={item.symbol}
           />
         </div>

@@ -3,14 +3,17 @@ import { PropTypes } from 'prop-types';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 
 const Currency = ({
-  img, name, price, priceChange, symbol,
+  name, priceUsd, changePercent24Hr, symbol,
 }) => (
   <div className="currency-card">
     <div className="go-arrow">
       <FaArrowAltCircleRight />
     </div>
     <div className="logo-container">
-      <img src={img} alt="Currency Name" className="currency-logo" />
+      <p>
+        <span className="card-text">Symbol:</span>
+        {symbol}
+      </p>
     </div>
     <div className="card-container flex">
       <div className="card-left flex card-column">
@@ -26,11 +29,11 @@ const Currency = ({
       <div className="card-right flex card-column">
         <p>
           <span className="card-text">Price: $</span>
-          {price.toFixed(2)}
+          {priceUsd}
         </p>
         <p>
-          <span className="card-text">Price Change (1W):</span>
-          {priceChange}
+          <span className="card-text">Price Change (24hs):</span>
+          {changePercent24Hr}
         </p>
       </div>
     </div>
@@ -38,10 +41,9 @@ const Currency = ({
 );
 
 Currency.propTypes = {
-  img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  priceChange: PropTypes.number.isRequired,
+  priceUsd: PropTypes.string.isRequired,
+  changePercent24Hr: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,
 };
 
