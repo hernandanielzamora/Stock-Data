@@ -26,7 +26,7 @@ const Currency = ({
       <div className="card-right flex card-column">
         <p>
           <span className="card-text">Price: $</span>
-          {priceUsd}
+          {priceUsd.toFixed(2)}
         </p>
         <p>
           <span className="card-text">Price Change (1hs):</span>
@@ -41,7 +41,7 @@ Currency.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   priceUsd: PropTypes.number.isRequired,
-  priceChange1h: PropTypes.number.isRequired,
+  priceChange1h: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,
 };
 

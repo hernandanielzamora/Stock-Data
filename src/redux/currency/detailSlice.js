@@ -1,13 +1,19 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const apiUrl = 'https://api.coinstats.app/public/v1/coins/';
+const apiUrl = 'https://openapiv1.coinstats.app/coins/';
 
 export const getDetails = createAsyncThunk(
   'getDetails',
   async (id) => {
     try {
-      const res = await fetch(`${apiUrl}${id}`);
-      const data = await res.json();
+      const res = await axios.get(`${apiUrl}${id}`, {
+        headers: {
+          'x-api-key': 'AQJPIZGvFxPYf6xkwfOouSBNRhyx+Y7bq5iIp7cD/+c=',
+        },
+      });
+      const data = await res.data;
+      console.log(data);
       return data;
     } catch (error) {
       return error;
@@ -32,7 +38,7 @@ const detailsSlice = createSlice({
     builder.addCase(getDetails.fulfilled, (state, action) => ({
       ...state,
       isLoading: false,
-      currencyDetails: action.payload.coin,
+      currencyDetails: action.payload,
     }));
   },
 });

@@ -13,7 +13,6 @@ export const getCurrency = createAsyncThunk(
         },
       });
       const data = await res.data;
-      console.log(data.result);
       return data;
     } catch (error) {
       return error;

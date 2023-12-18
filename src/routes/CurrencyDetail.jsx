@@ -8,13 +8,15 @@ const CurrencyDetail = () => {
   const dispatch = useDispatch();
   const { currencyDetails } = useSelector((state) => state.details);
 
+  console.log(currencyDetails);
+
   useEffect(() => {
     dispatch(getDetails(currencyID));
   }, [currencyID, dispatch]);
 
-  if (!currencyDetails || currencyDetails.isLoading) {
+  /*   if (!currencyDetails || currencyDetails.isLoading) {
     return <div>Loading...</div>;
-  }
+  } */
 
   return (
     <div className="details-card flex">

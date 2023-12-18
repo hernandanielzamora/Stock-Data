@@ -12,7 +12,7 @@ const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [currencyWanted, setCurrencyWanted] = useState('');
-  console.log(currencyArr);
+
   useEffect(() => {
     if (fetchStatus.current) {
       fetchStatus.current = false;
@@ -60,7 +60,7 @@ const Home = () => {
             img={item.icon}
             name={item.name}
             priceUsd={item.price}
-            priceChange={item.priceChange1h}
+            priceChange1h={item.priceChange1h}
             symbol={item.symbol}
           />
         </div>
