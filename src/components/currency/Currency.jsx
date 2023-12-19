@@ -21,8 +21,6 @@ const Currency = ({
               <span className="card-text">Symbol:</span>
               {symbol}
             </p>
-          </div>
-          <div className="card-right flex card-column">
             <p>
               <span className="card-text">Price: $</span>
               {priceUsd.toFixed(2)}
