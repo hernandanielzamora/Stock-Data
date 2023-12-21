@@ -14,9 +14,9 @@ const CurrencyDetail = () => {
     dispatch(getDetails(currencyID));
   }, [currencyID, dispatch]);
 
-  /*   if (!currencyDetails || currencyDetails.isLoading) {
+  if (!currencyDetails || currencyDetails.isLoading) {
     return <div>Loading...</div>;
-  } */
+  }
 
   return (
     <div className="details-card flex">
