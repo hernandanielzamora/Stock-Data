@@ -26,7 +26,7 @@ const Currency = ({
               {priceUsd.toFixed(2)}
             </p>
             <p>
-              <span className="card-text">Price Change (1hs):</span>
+              <span className="card-text">Price Change (1h):</span>
               {priceChange1h}
             </p>
           </div>
