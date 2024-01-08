@@ -16,11 +16,12 @@
 
 body {
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 67%, rgba(204, 87, 0, 1) 100%);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 67%, rgba(204, 87, 0, 1) 100%); */
+  background-color: #858585;
 }
 
 .darker-bg {
-  background-color: #C27344;
+  background-color: #858585;
 }
 
 /* ========================= */
